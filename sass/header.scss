@@ -1,6 +1,7 @@
 header {
+  margin             : 0;
   width              : 100%;
-  height             : 500px;
+  height             : 600px;
   opacity            : 0.71;
   background-color   : red;
   background-image   : url("../img/BG_Hero.png");
@@ -21,7 +22,7 @@ header {
 
   .formato {
     position        : absolute;
-    height          : 505px;
+    height          : inherit;
     top             : 0;
     padding         : 20px;
     background-color: rgba(86, 146, 208, .9);
@@ -37,6 +38,10 @@ header {
       line-height: 1.5;
       text-align : left;
       color      : #ffffff;
+    }
+
+    .demo {
+      margin: 0;
     }
   }
 

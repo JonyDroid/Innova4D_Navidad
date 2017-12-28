@@ -683,8 +683,9 @@ img {
 /* Errores */
 /* Cuerpo */
 header {
+  margin: 0;
   width: 100%;
-  height: 500px;
+  height: 600px;
   opacity: 0.71;
   background-color: red;
   background-image: url("../img/BG_Hero.png");
@@ -702,7 +703,7 @@ header {
       object-fit: contain; }
   header .formato {
     position: absolute;
-    height: 505px;
+    height: inherit;
     top: 0;
     padding: 20px;
     background-color: rgba(86, 146, 208, 0.9);
@@ -718,6 +719,8 @@ header {
       line-height: 1.5;
       text-align: left;
       color: #ffffff; }
+    header .formato .demo {
+      margin: 0; }
   header .titulo h1 {
     display: block;
     position: relative;
@@ -877,94 +880,121 @@ h3 {
     float: left;
     margin-right: 20px; }
 
-form {
-  display: table;
-  margin: 40px auto;
-  width: 100%; }
-  form label {
-    width: 50%;
-    position: relative;
-    display: block;
-    margin: 0 auto; }
-    form label textarea {
-      height: 150px; }
-    form label input,
-    form label textarea {
-      border: 2px solid #f85a6d;
-      border-radius: 10px;
-      background-color: #252b4d;
-      font: 18px "montserratlight", sans-serif;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      display: block;
-      padding: 20px;
-      width: 100%;
-      margin-bottom: 20px;
-      font-size: 18px;
-      outline: none;
-      -webkit-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      color: #f5f8ff; }
-      form label input::-webkit-input-placeholder,
-      form label textarea::-webkit-input-placeholder {
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        color: rgba(255, 255, 255, 0.7);
-        font: 18px Helvetica, Arial, sans-serif; }
-      form label input:-ms-input-placeholder,
-      form label textarea:-ms-input-placeholder {
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        color: rgba(255, 255, 255, 0.7);
-        font: 18px Helvetica, Arial, sans-serif; }
-      form label input::placeholder,
-      form label textarea::placeholder {
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        color: rgba(255, 255, 255, 0.7);
-        font: 18px Helvetica, Arial, sans-serif; }
-      form label input.populated, form label input:focus,
-      form label textarea.populated,
-      form label textarea:focus {
-        padding-top: 28px;
-        padding-bottom: 12px; }
-        form label input.populated::-webkit-input-placeholder, form label input:focus::-webkit-input-placeholder,
-        form label textarea.populated::-webkit-input-placeholder,
-        form label textarea:focus::-webkit-input-placeholder {
-          color: transparent; }
-        form label input.populated:-ms-input-placeholder, form label input:focus:-ms-input-placeholder,
-        form label textarea.populated:-ms-input-placeholder,
-        form label textarea:focus:-ms-input-placeholder {
-          color: transparent; }
-        form label input.populated::placeholder, form label input:focus::placeholder,
-        form label textarea.populated::placeholder,
-        form label textarea:focus::placeholder {
-          color: transparent; }
-        form label input.populated + span, form label input:focus + span,
-        form label textarea.populated + span,
-        form label textarea:focus + span {
-          opacity: 1;
-          top: 10px; }
-    form label span {
-      color: #f85a6d;
-      font: 13px "montserratlight", sans-serif;
-      position: absolute;
-      top: 0;
-      left: 20px;
-      opacity: 0;
-      -webkit-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-  form input:-webkit-autofill,
-  form select:-webkit-autofill,
-  form textarea:-webkit-autofill {
-    background-color: #252b4d;
-    background-image: none;
-    color: white; }
+a .whats {
+  text-decoration: none !important; }
+  a .whats:link {
+    text-decoration: none; }
+  a .whats:visited {
+    text-decoration: none; }
+
+/*DEMO*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0; }
+
+* ul li {
+  display: block;
+  list-style: none; }
+
+.demo {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%; }
+
+.demo .material-input {
+  margin-top: 40px; }
+
+.dos {
+  float: left;
+  width: calc(50% - 20px) !important;
+  margin-right: 20; }
+
+.tres {
+  float: right;
+  width: calc(50% - 20px) !important;
+  margin-right: 0;
+  margin-bottom: 40px; }
+
+.clear {
+  clear: both; }
+
+.send_form {
+  margin-top: 20px; }
+
+/*INPUT*/
+.material-input {
+  font-size: 14px;
+  color: #ffffff; }
+
+.material-input .main-input,
+.material-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.material-input .main-input.focus,
+.material-input input.focus {
+  border-color: #ffffff; }
+
+.material-input .placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none; }
+
+.material-input .placeholder.focus {
+  font-size: 12px;
+  top: -20px; }
+
+.material-input .dropdown {
+  position: absolute;
+  right: 10px;
+  top: 0; }
+
+.material-input .dropdown-list {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  z-index: 200;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 5, 0.2);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 5, 0.2); }
+
+.material-input .dropdown-list .option {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+  color: #000000; }
+
+.material-input .dropdown-list .option:hover {
+  background: #ffffff; }
+
+.material-input .dropdown-list .option.active {
+  background: #09f; }
+
+.material-select input {
+  display: none; }
+
+.material-select .main-input {
+  cursor: pointer;
+  color: transparent; }
+
+.material-select .main-input.focus {
+  color: #ffffff; }
 
 .fbm {
   color: #fff;

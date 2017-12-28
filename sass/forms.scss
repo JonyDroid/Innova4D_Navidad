@@ -1,83 +1,126 @@
-form {
-    display: table;
-    margin : 40px auto;
-    width  : 100%;
+/*DEMO*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  position          : relative;
+  padding           : 0;
+  margin            : 0;
+}
 
-    label {
-        width   : 50%;
-        position: relative;
-        display : block;
-        margin  : 0 auto;
+* ul li {
+  display   : block;
+  list-style: none;
+}
 
-        & textarea {
-            height: 150px;
-        }
+.demo {
+  padding  : 0 20px;
+  margin   : 0 auto;
+  display  : block;
+  max-width: 100%;
+}
 
-        input,
-        textarea {
-            border          : 2px solid $warm-pink;
-            border-radius   : 10px;
-            background-color: $dark-blue-grey;
-            font            : 18px "montserratlight", sans-serif;
-            box-sizing      : border-box;
-            display         : block;
-            padding         : 20px;
-            width           : 100%;
-            margin-bottom   : 20px;
-            font-size       : 18px;
-            outline         : none;
-            transition      : all 0.2s ease-in-out;
-            color           : $very-light-blue;
+.demo .material-input {
+  margin-top: 40px;
+}
 
-            &::placeholder {
-                transition: all 0.2s ease-in-out;
-                color     : rgba(#ffffff, 0.70);
-                font      : 18px Helvetica, Arial, sans-serif;
-            }
+.dos {
+  float       : left;
+  width       : calc(50% - 20px) !important;
+  margin-right: 20;
+}
 
-            &.populated,
-            &:focus {
-                padding-top   : 28px;
-                padding-bottom: 12px;
+.tres {
+  float        : right;
+  width        : calc(50% - 20px) !important;
+  margin-right : 0;
+  margin-bottom: 40px;
+}
 
-                &::placeholder {
-                    color: transparent;
-                }
+.clear {
+  clear: both;
+}
 
-                & + span {
-                    opacity: 1;
-                    top    : 10px;
-                }
-            }
-        }
+.send_form {
+  margin-top: 20px;
+}
+/*INPUT*/
+.material-input {
+  font-size: 14px;
+  color    : #ffffff;
+}
 
-        span {
-            color     : $warm-pink;
-            font      : 13px "montserratlight", sans-serif;
-            position  : absolute;
-            top       : 0;
-            left      : 20px;
-            opacity   : 0;
-            transition: all 0.2s ease-in-out;
-        }
-    }
-    // input[type="submit"] {
-    //     transition: all 0.2s ease-in-out;
-    //     font      : 18px "montserratlight", sans-serif;
-    //     border    : none;
-    //     background: #1aaf75;
-    //     color     : #fff;
-    //     padding   : 16px 40px;
-    //
-    //     &:hover {
-    //         background: #109f67;
-    //     }
-    // }
-    input:-webkit-autofill,
-    select:-webkit-autofill,
-    textarea:-webkit-autofill {
-        background-color: $dark-blue-grey;
-        background-image: none;
-        color           : white;
-    }
+.material-input .main-input,
+.material-input input {
+  width         : 100%;
+  border        : none;
+  outline       : none;
+  background    : none;
+  border-bottom : 1px solid #ffffff;
+  padding-bottom: 10px;
+  padding-top   : 10px;
+}
+
+.material-input .main-input.focus,
+.material-input input.focus {
+  border-color: #ffffff;
+}
+
+.material-input .placeholder {
+  position          : absolute;
+  top               : 0;
+  left              : 0;
+  -webkit-transition: all 0.3s;
+  transition        : all 0.3s;
+  pointer-events    : none;
+}
+
+.material-input .placeholder.focus {
+  font-size: 12px;
+  top      : -20px;
+}
+
+.material-input .dropdown {
+  position: absolute;
+  right   : 10px;
+  top     : 0;
+}
+
+.material-input .dropdown-list {
+  background: #ffffff;
+  border    : 1px solid #ffffff;
+  position  : absolute;
+  top       : 100%;
+  left      : 0;
+  width     : 100%;
+  margin-top: 0;
+  z-index   : 200;
+  box-shadow: 0 0 10px 0 rgba(0,0,5,0.2);
+}
+
+.material-input .dropdown-list .option {
+  font-size: 12px;
+  cursor   : pointer;
+  padding  : 10px;
+  color    : #000000;
+}
+
+.material-input .dropdown-list .option:hover {
+  background: #ffffff;
+}
+
+.material-input .dropdown-list .option.active {
+  background: #09f;
+}
+
+.material-select input {
+  display: none;
+}
+
+.material-select .main-input {
+  cursor: pointer;
+  color : transparent;
+}
+
+.material-select .main-input.focus {
+  color: #ffffff;
 }

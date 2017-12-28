@@ -35,15 +35,61 @@
     <section class="col-xs-offset-8 col-xs-4  formato">
       <h2>Deja tus datos y nuestro quipo se podra en contacto.</h2>
 
-      <form action="welcome.php" method="post">
-        <input type="text" name="" value="">
-        <input type="text" name="" value="">
-        <input type="text" name="" value="">
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
-        <input type="text" name="" value=""><br>
-        <input type="submit">
-      </form>
+
+      <div class="demo">
+        <div class="material-input material-select">
+          <div class="main-input">select</div>
+          <input type="text" id="material-select" readonly style="display:none">
+          <span class="placeholder">Me interesa la promoción:</span>
+          <span class="dropdown">&darr;</span>
+          <ul class="dropdown-list" style="display: none;">
+            <li class="option">CAD / CAM paquete completo</li>
+            <li class="option">CAD / CAM completo media producción</li>
+            <li class="option">Alta Producción paquete C</li>
+            <li class="option">Clinico paquete A</li>
+            <li class="option">Clinico paquete B</li>
+            <li class="option">LAB Completo</li>
+          </ul>
+        </div>
+
+        <div class="material-input material-select">
+          <div class="main-input">select</div>
+          <input type="text" id="material-select" readonly style="display:none">
+          <span class="placeholder">Soy un:</span>
+          <span class="dropdown">&darr;</span>
+          <ul class="dropdown-list" style="display: none;">
+            <li class="option">Laboratorio</li>
+            <li class="option">Consultorio</li>
+          </ul>
+        </div>
+
+        </ul>
+        <div class="material-input ">
+          <label for="material-input">
+            <input type="text">
+            <span class="placeholder">Nombre</span>
+          </label>
+        </div>
+
+        <div class="material-input ">
+          <label for="material-input">
+            <input type="text">
+            <span class="placeholder">Correo electrónico</span>
+          </label>
+        </div>
+
+        <div class="material-input">
+          <label for="material-input">
+            <input type="text">
+            <span class="placeholder">Teléfono / Celular</span>
+          </label>
+        </div>
+
+        <div class="boton-principal send_form">
+          Solicitar información
+        </div>
+
+      </div>
 
 
 
@@ -153,12 +199,15 @@
 
         <div class=" tarjeta1">
           <h4>México y Latinoamerica </h4>
-          <div class="boton-principal">
-            <img src="img/whatsapp-logo.png" class="whats"> (55) 4057 6084
-          </div>
+          <a class="whats" href="https://api.whatsapp.com/send?phone=5215540576084&text= Hola quiero información de una promoción">
+            <div class="boton-principal">
+              <img src="img/whatsapp-logo.png" class="whats"> (55) 4057 6084
+            </div>
+          </a>
         </div>
         <div class=" tarjeta1">
           <h4>Correo </h4>
+          <a href="mailto:info@innova4d.mx"></a>
           <div class="">
             info@innova4d.mx
           </div>
@@ -188,6 +237,6 @@
 
 
 </body>
+<script src="scripts/form.js"></script>
 
 </html>
-<p>

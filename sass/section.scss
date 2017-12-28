@@ -162,3 +162,15 @@ h3 {
     margin-right: 20px;
   }
 }
+
+a .whats {
+  text-decoration: none !important;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
