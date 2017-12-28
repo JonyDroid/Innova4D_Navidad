@@ -13,10 +13,12 @@ $desktop: 1280px;
 $hd: 1600px;
 
 body {
-	width      : 100%;
-	font-size  : 14px;
-	font-family: 'Hind', sans-serif;
-	color      : $dark-blue-grey;
+	width           : 100%;
+	font-size       : 14px;
+	font-family     : 'Hind', sans-serif;
+	color           : $dark-blue-grey;
+	background-image: url("../img/BGTextura.png");
+	background-size : 80%;
 }
 
 h1,
