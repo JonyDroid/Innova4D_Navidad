@@ -1,7 +1,7 @@
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size  : 34px;
-  margin     : 60px 0 0;
+  margin     : 60px 0 40px;
   text-align : center;
   color      : #000a12;
 }
@@ -89,7 +89,7 @@ h3 {
     display     : block;
     position    : absolute;
     text-align  : left;
-    margin-top  : 160px;
+    margin-top  : 140px;
     padding-left: 20px;
     color       : #ffffff;
     z-index     : 100;
@@ -99,7 +99,7 @@ h3 {
     display   : block;
     position  : absolute;
     text-align: left;
-    margin-top: 210px;
+    margin-top: 180px;
     color     : #ffffff;
 
     p {
@@ -127,12 +127,13 @@ h3 {
 
 .tarjeta1 {
   float           : left;
-  width           : calc(90% / 3);
-  height          : 130px;
-  margin          : 0 20px;
-  padding         : 20px 0;
+  width           : calc(100% / 3 - 20px);
+  height          : 150px;
+  margin          : 10px;
+  padding         : 20px;
+  border-radius   : 8px;
   background-color: #FFFFFF;
-  box-shadow      : 0 0 10px 0 rgba(0,0,0,0.1);
+  box-shadow      : 0 0 10px 0 rgba(0,0,5,0.2);
   box-sizing      : border-box;
 
   h4 {
