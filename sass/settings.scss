@@ -1,22 +1,18 @@
 /* Color de paleta */
-$dark-blue-grey: #252b4d;
-$very-light-blue: #f5f8ff;
-$warm-pink: #f85a6d;
-$aqua: #0bebb5;
-$bright-sky-blue: #1ab9fa;
-$purpleish-pink: #e443bb;
-$dusty-orange: #f58a39;
+$var: #252b4d;
 /* Pantallas*/
 $mobile: 320px;
 $tablet: 700px;
 $desktop: 1280px;
 $hd: 1600px;
 
-body {
+body,
+html {
+	margin          : 0;
+	padding         : 0;
 	width           : 100%;
 	font-size       : 14px;
 	font-family     : 'Hind', sans-serif;
-	color           : $dark-blue-grey;
 	background-image: url("../img/BGTextura.png");
 	background-size : 80%;
 }

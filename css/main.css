@@ -360,11 +360,13 @@ th {
 
 /* Color de paleta */
 /* Pantallas*/
-body {
+body,
+html {
+  margin: 0;
+  padding: 0;
   width: 100%;
   font-size: 14px;
   font-family: 'Hind', sans-serif;
-  color: #252b4d;
   background-image: url("../img/BGTextura.png");
   background-size: 80%; }
 
@@ -400,290 +402,11 @@ img {
   height: auto;
   width: 100%; }
 
-.button {
-  font-family: 16px;
-  display: inline-block;
-  padding: 0.7em 3em;
-  text-decoration: none;
-  border: none;
-  border-radius: 50px;
-  margin-top: 30px !important;
-  color: #252b4d;
-  font-family: "montserratlight", sans-serif;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  .button--general, .button__mail {
-    border-radius: 50px;
-    color: white;
-    background-image: -webkit-gradient(linear, right top, left top, from(#f12e8a), to(#ff8651));
-    background-image: -webkit-linear-gradient(right, #f12e8a, #ff8651);
-    background-image: -o-linear-gradient(right, #f12e8a, #ff8651);
-    background-image: linear-gradient(to left, #f12e8a, #ff8651);
-    -webkit-box-shadow: 0 1px 4px 0 #e443bb;
-    box-shadow: 0 1px 4px 0 #e443bb; }
-  .button--aqua {
-    border: solid 1px #0bebb5; }
-    .button--aqua.active, .button--aqua:hover {
-      color: white;
-      background-image: -webkit-gradient(linear, left top, right top, from(#00d3ec), to(#12fb90));
-      background-image: -webkit-linear-gradient(left, #00d3ec, #12fb90);
-      background-image: -o-linear-gradient(left, #00d3ec, #12fb90);
-      background-image: linear-gradient(to right, #00d3ec, #12fb90);
-      -webkit-box-shadow: 0 1px 4px 0 #0bebb5;
-      box-shadow: 0 1px 4px 0 #0bebb5; }
-  .button--blue {
-    border: solid 1px #1ab9fa; }
-    .button--blue.active, .button--blue:hover {
-      color: white;
-      background-image: -webkit-gradient(linear, left top, right top, from(#1682fa), to(#1ee6fb));
-      background-image: -webkit-linear-gradient(left, #1682fa, #1ee6fb);
-      background-image: -o-linear-gradient(left, #1682fa, #1ee6fb);
-      background-image: linear-gradient(to right, #1682fa, #1ee6fb);
-      -webkit-box-shadow: 0 1px 4px 0 #1ab9fa;
-      box-shadow: 0 1px 4px 0 #1ab9fa; }
-  .button--pink {
-    border: solid 1px #e443bb; }
-    .button--pink.active, .button--pink:hover {
-      color: white;
-      background-image: -webkit-gradient(linear, right top, left top, from(#cf5afe), to(#ff2566));
-      background-image: -webkit-linear-gradient(right, #cf5afe, #ff2566);
-      background-image: -o-linear-gradient(right, #cf5afe, #ff2566);
-      background-image: linear-gradient(to left, #cf5afe, #ff2566);
-      -webkit-box-shadow: 0 1px 4px 0 #e443bb;
-      box-shadow: 0 1px 4px 0 #e443bb; }
-  .button--orange {
-    border: solid 1px #f58a39; }
-    .button--orange.active, .button--orange:hover {
-      color: white;
-      background-image: -webkit-gradient(linear, right top, left top, from(#f1bd2e), to(#fa4545));
-      background-image: -webkit-linear-gradient(right, #f1bd2e, #fa4545);
-      background-image: -o-linear-gradient(right, #f1bd2e, #fa4545);
-      background-image: linear-gradient(to left, #f1bd2e, #fa4545);
-      -webkit-box-shadow: 0 1px 4px 0 #f58a39;
-      box-shadow: 0 1px 4px 0 #f58a39; }
-  .button--bussi {
-    margin: 0 !important;
-    border: solid 2px #49a4b6;
-    color: white; }
-    .button--bussi.active, .button--bussi:hover {
-      color: white;
-      background-color: #49a4b6;
-      -webkit-box-shadow: 0 1px 4px 0 #49a4b6;
-      box-shadow: 0 1px 4px 0 #49a4b6; }
-    .button--bussi.cerrar {
-      border: solid 2px #162f47; }
-      .button--bussi.cerrar.active, .button--bussi.cerrar:hover {
-        color: white;
-        background-color: #162f47;
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-
-.btnDudasyPreguntas {
-  color: #fff;
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  font-size: 14px;
-  background: #448aff;
-  text-transform: none;
-  border-radius: 50%;
-  padding: 15px;
-  z-index: 99999999;
-  -webkit-box-shadow: 2px 3px 7px rgba(27, 127, 204, 0.8);
-  box-shadow: 2px 3px 7px rgba(27, 127, 204, 0.8);
-  text-decoration: none; }
-  .btnDudasyPreguntas.form {
-    position: relative;
-    right: inherit;
-    bottom: inherit;
-    margin: 0 auto 20px;
-    padding: 15px 20px;
-    border-radius: 50px;
-    width: 400px; }
-    .btnDudasyPreguntas.form:hover {
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none; }
-    .btnDudasyPreguntas.form img {
-      display: inline-block;
-      margin: 0;
-      padding: 10px;
-      vertical-align: -17px; }
-
-.bg {
-  position: relative;
-  padding: 0;
-  background: white; }
-  .bg--home {
-    background-image: url("../img/mbg1.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--home {
-        background-image: url("../img/bg1.jpg"); } }
-  .bg--sede1 {
-    background-image: url("../img/sede1.jpg"); }
-  .bg--sede2 {
-    background-image: url("../img/sede2.jpg"); }
-  .bg--sede3 {
-    background-image: url("../img/sede3.jpg"); }
-  .bg--contact {
-    background-image: url("../img/mbg6.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--contact {
-        background-image: url("../img/bg6.jpg"); } }
-  .bg--contact, .bg--home, .bg--sede1, .bg--sede2, .bg--sede3 {
-    color: #252b4d;
-    background-position: center;
-    background-size: cover; }
-    .bg--contact::before, .bg--home::before, .bg--sede1::before, .bg--sede2::before, .bg--sede3::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      content: '';
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-      background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-  .bg--pttrn {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-    background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-    background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-    background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-  .bg--negro {
-    background-color: #252b4d; }
-    .bg--negro h2 {
-      color: #f85a6d; }
-    .bg--negro h3 {
-      color: #0bebb5; }
-    .bg--negro p {
-      color: #f5f8ff;
-      font-family: "montserratultra_light", sans-serif; }
-    .bg--negro ul {
-      font-size: 0;
-      margin-bottom: 50px; }
-      .bg--negro ul li {
-        font-size: 1rem;
-        display: inline-block;
-        padding: 10px 20px;
-        border: 2px solid #0bebb5;
-        border-style: dotted;
-        border-radius: 30px;
-        list-style: none;
-        font-family: "montserratultra_light",sans-serif;
-        font-size: 16;
-        color: #f5f8ff; }
-        .bg--negro ul li:nth-child(2n) {
-          vertical-align: 5px;
-          height: 2px;
-          padding: 0;
-          width: 50px;
-          margin: 0;
-          background: #0bebb5;
-          border: 0; }
-    .bg--negro .btnplay::before {
-      content: url("../img/play.png");
-      width: 20px;
-      height: 20px;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-right: 10px; }
-    .bg--negro .nota {
-      font-family: "montserratultra_light",sans-serif;
-      font-size: 14px;
-      color: #FFFFFF;
-      margin-top: 20px; }
-  .bg--agroindustria, .bg--movilidad, .bg--social, .bg--turismo {
-    overflow: hidden;
-    background-position: center left;
-    background-size: cover; }
-    .bg--agroindustria::before, .bg--movilidad::before, .bg--social::before, .bg--turismo::before {
-      position: absolute;
-      width: 70%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      content: ''; }
-    .bg--agroindustria::after, .bg--movilidad::after, .bg--social::after, .bg--turismo::after {
-      position: absolute;
-      width: 70%;
-      right: -20%;
-      top: 0;
-      bottom: 0;
-      content: '';
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
-      transform: skewX(-30deg); }
-  .bg--agroindustria {
-    background-image: url("../img/mbg2.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--agroindustria {
-        background-image: url("../img/bg2.jpg"); } }
-    .bg--agroindustria::before {
-      opacity: 0.7;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#00d3ec), to(#12fb90));
-      background-image: -webkit-linear-gradient(top, #00d3ec, #12fb90);
-      background-image: -o-linear-gradient(top, #00d3ec, #12fb90);
-      background-image: linear-gradient(to bottom, #00d3ec, #12fb90); }
-    .bg--agroindustria::after {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-      background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-  .bg--movilidad {
-    background-image: url("../img/mbg3.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--movilidad {
-        background-image: url("../img/bg3.jpg"); } }
-    .bg--movilidad::before {
-      opacity: 0.7;
-      background-image: -webkit-gradient(linear, left top, right top, from(#1682fa), to(#1ee6fb));
-      background-image: -webkit-linear-gradient(left, #1682fa, #1ee6fb);
-      background-image: -o-linear-gradient(left, #1682fa, #1ee6fb);
-      background-image: linear-gradient(to right, #1682fa, #1ee6fb); }
-    .bg--movilidad::after {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-      background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-  .bg--turismo {
-    background-image: url("../img/mbg4.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--turismo {
-        background-image: url("../img/bg4.jpg"); } }
-    .bg--turismo::before {
-      opacity: 0.7;
-      background-image: -webkit-gradient(linear, right top, left top, from(#cf5afe), to(#ff2566));
-      background-image: -webkit-linear-gradient(right, #cf5afe, #ff2566);
-      background-image: -o-linear-gradient(right, #cf5afe, #ff2566);
-      background-image: linear-gradient(to left, #cf5afe, #ff2566); }
-    .bg--turismo::after {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-      background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-  .bg--social {
-    background-image: url("../img/mbg5.jpg"); }
-    @media only screen and (min-width: 1280px) {
-      .bg--social {
-        background-image: url("../img/bg5.jpg"); } }
-    .bg--social::before {
-      opacity: 0.7;
-      background-image: -webkit-gradient(linear, right top, left top, from(#f1bd2e), to(#fa4545));
-      background-image: -webkit-linear-gradient(right, #f1bd2e, #fa4545);
-      background-image: -o-linear-gradient(right, #f1bd2e, #fa4545);
-      background-image: linear-gradient(to left, #f1bd2e, #fa4545); }
-    .bg--social::after {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dee8ff));
-      background-image: -webkit-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: -o-linear-gradient(top, #ffffff, #dee8ff);
-      background-image: linear-gradient(to bottom, #ffffff, #dee8ff); }
-
 /* Errores */
 /* Cuerpo */
 header {
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 600px;
   opacity: 0.71;
@@ -694,17 +417,20 @@ header {
   box-sizing: border-box; }
   header .header_top {
     width: 100%;
-    height: 55px;
-    background-color: #ffffff; }
+    height: 70px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px 0 0; }
     header .header_top .logo_innonva4D {
       width: 120px;
-      margin-top: 5px;
       -o-object-fit: contain;
       object-fit: contain; }
   header .formato {
     position: absolute;
+    margin: 0;
     height: inherit;
     top: 0;
+    right: 0;
     padding: 20px;
     background-color: rgba(86, 146, 208, 0.9);
     -webkit-box-sizing: border-box;
@@ -995,20 +721,3 @@ a .whats {
 
 .material-select .main-input.focus {
   color: #ffffff; }
-
-.fbm {
-  color: #fff;
-  position: fixed;
-  right: 12px;
-  bottom: 10px;
-  font-size: 10px;
-  background: #448aff;
-  text-transform: none;
-  border-radius: 50%;
-  padding: 15px 15px;
-  z-index: 99999999;
-  -webkit-box-shadow: 2px 3px 7px #888888;
-  box-shadow: 2px 3px 7px #888888; }
-
-.fbm img {
-  width: 25px; }
