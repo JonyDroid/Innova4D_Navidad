@@ -1,0 +1,214 @@
+// Fondos
+
+.bg {
+    position  : relative;
+    padding   : 0;
+    background: white;
+
+    &--home {
+        background-image: url('../img/mbg1.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg1.jpg');
+        }
+    }
+
+    &--sede1 {
+        background-image: url('../img/sede1.jpg');
+    }
+
+    &--sede2 {
+        background-image: url('../img/sede2.jpg');
+    }
+
+    &--sede3 {
+        background-image: url('../img/sede3.jpg');
+    }
+
+    &--contact {
+        background-image: url('../img/mbg6.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg6.jpg');
+        }
+    }
+
+    &--contact,
+    &--home,
+    &--sede1,
+    &--sede2,
+    &--sede3 {
+        color              : $dark-blue-grey;
+        background-position: center;
+        background-size    : cover;
+
+        &::before {
+            position        : absolute;
+            top             : 0;
+            right           : 0;
+            bottom          : 0;
+            left            : 0;
+            content         : '';
+            background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+        }
+    }
+
+    &--pttrn {
+        // background-image: url('../img/pttrn.jpg');
+        // background-position: center;
+        background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+    }
+
+    &--negro {
+        background-color: $dark-blue-grey;
+
+        h2 {
+            color: $warm-pink;
+        }
+
+        h3 {
+            color: $aqua;
+        }
+
+        p {
+            color      : $very-light-blue;
+            font-family: "montserratultra_light", sans-serif;
+        }
+
+        ul {
+            font-size    : 0;
+            margin-bottom: 50px;
+
+            li {
+                font-size    : 1rem;
+                display      : inline-block;
+                padding      : 10px 20px;
+                border       : 2px solid $aqua;
+                border-style : dotted;
+                border-radius: 30px;
+                list-style   : none;
+                font-family  : "montserratultra_light",sans-serif;
+                font-size    : 16;
+                color        : $very-light-blue;
+
+                &:nth-child(2n) {
+                    vertical-align: 5px;
+                    height        : 2px;
+                    padding       : 0;
+                    width         : 50px;
+                    margin        : 0;
+                    background    : $aqua;
+                    border        : 0;
+                }
+            }
+        }
+
+        .btnplay {
+            &::before {
+                content            : url("../img/play.png");
+                width              : 20px;
+                height             : 20px;
+                background-position: center;
+                background-repeat  : no-repeat;
+                margin-right       : 10px;
+            }
+        }
+
+        .nota {
+            font-family: "montserratultra_light",sans-serif;
+            font-size  : 14px;
+            color      : #FFFFFF;
+            margin-top : 20px;
+        }
+    }
+
+    &--agroindustria,
+    &--movilidad,
+    &--social,
+    &--turismo {
+        overflow           : hidden;
+        background-position: center left;
+        background-size    : cover;
+
+        &::before {
+            position: absolute;
+            width   : 70%;
+            top     : 0;
+            left    : 0;
+            bottom  : 0;
+            content : '';
+        }
+
+        &::after {
+            position : absolute;
+            width    : 70%;
+            right    : -20%;
+            top      : 0;
+            bottom   : 0;
+            content  : '';
+            transform: skewX(-30deg);
+        }
+    }
+
+    &--agroindustria {
+        background-image: url('../img/mbg2.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg2.jpg');
+        }
+
+        &::before {
+            opacity         : 0.7;
+            background-image: linear-gradient(to bottom, #00d3ec, #12fb90);
+        }
+
+        &::after {
+            background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+        }
+    }
+
+    &--movilidad {
+        background-image: url('../img/mbg3.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg3.jpg');
+        }
+
+        &::before {
+            opacity         : 0.7;
+            background-image: linear-gradient(to right, #1682fa, #1ee6fb);
+        }
+
+        &::after {
+            background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+        }
+    }
+
+    &--turismo {
+        background-image: url('../img/mbg4.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg4.jpg');
+        }
+
+        &::before {
+            opacity         : 0.7;
+            background-image: linear-gradient(to left, #cf5afe, #ff2566);
+        }
+
+        &::after {
+            background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+        }
+    }
+
+    &--social {
+        background-image: url('../img/mbg5.jpg');
+        @media only screen and (min-width: $desktop) {
+            background-image: url('../img/bg5.jpg');
+        }
+
+        &::before {
+            opacity         : 0.7;
+            background-image: linear-gradient(to left, #f1bd2e, #fa4545);
+        }
+
+        &::after {
+            background-image: linear-gradient(to bottom, #ffffff, #dee8ff);
+        }
+    }
+}

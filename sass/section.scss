@@ -1,0 +1,23 @@
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size  : 34px;
+  margin     : 40px 0 20px;
+  text-align : center;
+  color      : #000a12;
+}
+
+.promos {
+  display         : block;
+  width           : 100%;
+  background-color: blue;
+
+  .tarjeta {
+    box-sizing      : border-box;
+    float           : left;
+    width           : calc(100% / 3);
+    height          : 248px;
+    background-color: red;
+    margin          : 0;
+    border          : 4px solid #ffffff;
+  }
+}

@@ -1,0 +1,59 @@
+/* Color de paleta */
+$dark-blue-grey: #252b4d;
+$very-light-blue: #f5f8ff;
+$warm-pink: #f85a6d;
+$aqua: #0bebb5;
+$bright-sky-blue: #1ab9fa;
+$purpleish-pink: #e443bb;
+$dusty-orange: #f58a39;
+/* Pantallas*/
+$mobile: 320px;
+$tablet: 700px;
+$desktop: 1280px;
+$hd: 1600px;
+
+body {
+	width      : 100%;
+	font-size  : 14px;
+	font-family: 'Hind', sans-serif;
+	color      : $dark-blue-grey;
+}
+
+h1,
+h2,
+h3 {
+	font-family   : 'Montserrat', sans-serif;
+	font-weight   : normal;
+	margin        : 0.2em 0;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	font-family  : "montserrat_light", sans-serif;
+	font-size    : 16px;
+	line-height  : 24px;
+	margin-bottom: 40px;
+}
+
+figure {
+	margin : 0;
+	padding: 0;
+}
+
+img {
+	display: inherit;
+	height : auto;
+	width  : 100%;
+}

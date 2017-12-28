@@ -1,0 +1,129 @@
+.button {
+    font-family    : 16px;
+    display        : inline-block;
+    padding        : 0.7em 3em;
+    text-decoration: none;
+    border         : none;
+    border-radius  : 50px;
+    margin-top     : 30px !important;
+    color          : $dark-blue-grey;
+    font-family    : "montserratlight", sans-serif;
+    transition     : all 0.5s ease;
+
+    &--general,
+    &__mail {
+        border-radius   : 50px;
+        color           : white;
+        background-image: linear-gradient(to left, #f12e8a, #ff8651);
+        box-shadow      : 0 1px 4px 0 $purpleish-pink;
+    }
+    // agroindustria
+    &--aqua {
+        border: solid 1px $aqua;
+
+        &.active,
+        &:hover {
+            color           : white;
+            background-image: linear-gradient(to right, #00d3ec, #12fb90);
+            box-shadow      : 0 1px 4px 0 $aqua;
+        }
+    }
+    // movilidad
+    &--blue {
+        border: solid 1px $bright-sky-blue;
+
+        &.active,
+        &:hover {
+            color           : white;
+            background-image: linear-gradient(to right, #1682fa, #1ee6fb);
+            box-shadow      : 0 1px 4px 0 $bright-sky-blue;
+        }
+    }
+    // turismo
+    &--pink {
+        border: solid 1px $purpleish-pink;
+
+        &.active,
+        &:hover {
+            color           : white;
+            background-image: linear-gradient(to left, #cf5afe, #ff2566);
+            box-shadow      : 0 1px 4px 0 $purpleish-pink;
+        }
+    }
+    // social
+    &--orange {
+        border: solid 1px $dusty-orange;
+
+        &.active,
+        &:hover {
+            color           : white;
+            background-image: linear-gradient(to left, #f1bd2e, #fa4545);
+            box-shadow      : 0 1px 4px 0 $dusty-orange;
+        }
+    }
+
+    &--bussi {
+        margin: 0 !important;
+        border: solid 2px rgb(73, 164, 182);
+        color : white;
+
+        &.active,
+        &:hover {
+            color           : white;
+            background-color: rgb(73, 164, 182);
+            box-shadow      : 0 1px 4px 0 rgb(73, 164, 182);
+        }
+
+        &.cerrar {
+            border: solid 2px #162f47;
+
+            &.active,
+            &:hover {
+                color           : white;
+                background-color: #162f47;
+                box-shadow      : none;
+            }
+        }
+    }
+}
+
+.btnDudasyPreguntas {
+    color          : #fff;
+    position       : fixed;
+    right          : 15px;
+    bottom         : 15px;
+    font-size      : 14px;
+    background     : #448aff;
+    text-transform : none;
+    border-radius  : 50%;
+    padding        : 15px;
+    z-index        : 99999999;
+    box-shadow     : 2px 3px 7px rgba(27,127,204,.8);
+    text-decoration: none;
+    // &:hover {
+    //     right     : 25px;
+    //     bottom    : 25px;
+    //     transform : scale(1.1, 1.1);
+    //     transition: all 0.5s ease;
+    // }
+    &.form {
+        position     : relative;
+        right        : inherit;
+        bottom       : inherit;
+        margin       : 0 auto 20px;
+        padding      : 15px 20px;
+        border-radius: 50px;
+        width        : 400px;
+
+        &:hover {
+            transform: none;
+        }
+
+        img {
+            display       : inline-block;
+            margin        : 0;
+            padding       : 10px;
+            vertical-align: -17px;
+        }
+    }
+}

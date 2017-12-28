@@ -1,0 +1,83 @@
+form {
+    display: table;
+    margin : 40px auto;
+    width  : 100%;
+
+    label {
+        width   : 50%;
+        position: relative;
+        display : block;
+        margin  : 0 auto;
+
+        & textarea {
+            height: 150px;
+        }
+
+        input,
+        textarea {
+            border          : 2px solid $warm-pink;
+            border-radius   : 10px;
+            background-color: $dark-blue-grey;
+            font            : 18px "montserratlight", sans-serif;
+            box-sizing      : border-box;
+            display         : block;
+            padding         : 20px;
+            width           : 100%;
+            margin-bottom   : 20px;
+            font-size       : 18px;
+            outline         : none;
+            transition      : all 0.2s ease-in-out;
+            color           : $very-light-blue;
+
+            &::placeholder {
+                transition: all 0.2s ease-in-out;
+                color     : rgba(#ffffff, 0.70);
+                font      : 18px Helvetica, Arial, sans-serif;
+            }
+
+            &.populated,
+            &:focus {
+                padding-top   : 28px;
+                padding-bottom: 12px;
+
+                &::placeholder {
+                    color: transparent;
+                }
+
+                & + span {
+                    opacity: 1;
+                    top    : 10px;
+                }
+            }
+        }
+
+        span {
+            color     : $warm-pink;
+            font      : 13px "montserratlight", sans-serif;
+            position  : absolute;
+            top       : 0;
+            left      : 20px;
+            opacity   : 0;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    // input[type="submit"] {
+    //     transition: all 0.2s ease-in-out;
+    //     font      : 18px "montserratlight", sans-serif;
+    //     border    : none;
+    //     background: #1aaf75;
+    //     color     : #fff;
+    //     padding   : 16px 40px;
+    //
+    //     &:hover {
+    //         background: #109f67;
+    //     }
+    // }
+    input:-webkit-autofill,
+    select:-webkit-autofill,
+    textarea:-webkit-autofill {
+        background-color: $dark-blue-grey;
+        background-image: none;
+        color           : white;
+    }
+}
