@@ -85,7 +85,7 @@ body {position:relative;}
 .contactMe .msg.success {color:#FFF;background-color:#00D466;background-image:url(../imgs/tick.png);}
 .contactMe .msg strong {color:inherit;}
 /* Submit button */
-.contactMe .btn {border:0;background:#60dac5;color:#FFF;font-weight:400;cursor:pointer;padding:12px 40px;margin-top:10px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;}
+.contactMe .btn {border:0;background:#60dac5;color:#FFF;font-weight:400;cursor:pointer;padding:12px 100px;margin-top:10px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;}
 .contactMe .btn:hover {opacity:0.9;}
 /* Theme Minimal */
 .contactMe.theme-minimal {border:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
