@@ -15,6 +15,11 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/flexboxgrid.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="contactme/css/select2.min.css">
+	<link rel="stylesheet" href="contactme/css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" href="contactme/css/jquery.timepicker.css">
+	<link rel="stylesheet" href="contactme/css/contactme.css">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -43,8 +48,55 @@
     </section>
     <section class=" formato">
       <h2>Deja tus datos y nuestro quipo se podra en contacto.</h2>
+      <form class="contactMe small theme-minimal" action="contactme/send-landing-contact-form.php" method="POST" enctype="multipart/form-data">
+				<section>
+					<div class="form-row">
+						<div class="title">Nombre</div>
+						<input type="text" data-displayname="Name" class="field" placeholder="Nombre" required>
+					</div>
+					<div class="form-row">
+						<div class="title">Correo electrónico</div>
+						<input type="email" data-displayname="Email" class="field" placeholder="Correo electrónico" required>
+					</div>
+					<div class="form-row">
+						<div class="title">Teléfono / Celular</div>
+						<input type="tel" data-displayname="Phone" class="field" placeholder="Teléfono / Celular" required>
+					</div>
+					<div class="form-row">
+						<div class="title">Soy un:</div>
+						<select data-displayname="Subject" class="field" placeholder="Soy un:" required>
+							<option default></option>
+							<option value="information">Laboratorio</option>
+							<option value="support">Consultorio</option>
+						</select>
+          </div>
+          <div class="form-row">
+						<div class="title">Me interesa la promoción:</div>
+						<select data-displayname="Subject" class="field" placeholder="Me interesa la promoción:" required>
+							<option default></option>
+							<option value="information">CAD / CAM paquete completo</option>
+              <option value="support">CAD / CAM completo media producción</option>
+              <option value="support">Alta Producción paquete C</option>
+              <option value="support">Clinico paquete A</option>
+              <option value="support">linico paquete B</option>
+              <option value="support">LAB Completo</option>
+						</select>
+					</div>
 
 
+					<!-- Google reCAPTCHA -->
+					<!-- Create a site key for your website: https://www.google.com/recaptcha -->
+					<!-- Replace YOUR_SITE_KEY_HERE with your site key -->
+					<!-- To enable Google reCAPTCHA V2, uncomment the next line -->
+					<!-- <div class="re-captcha" data-sitekey="YOUR_SITE_KEY_HERE"></div> -->
+					<!-- To enable Google Invisible reCAPTCHA, uncomment the next line -->
+					<div class="re-captcha" data-sitekey="6Lcpjj4UAAAAANCQ_1qhKLbe8ZofvniVtZgrrW36"></div>
+					<div class="msg"></div>
+
+					<button class="btn" type="submit" data-sending="Enviando...">Solicitar información</button>
+				</section>
+			</form>
+      <!--
       <div class="demo">
         <div class="material-input material-select">
           <div class="main-input">select</div>
@@ -101,7 +153,7 @@
       </div>
 
 
-
+    -->
     </section>
     <section class=" titulo">
       <h1>Especialistas en CAD CAM, Odontología Digital e Imagen</h1>
@@ -254,5 +306,18 @@
 
 </body>
 <script src="scripts/form.js"></script>
+
+<script src="contactme/js/jquery-3.2.1.min.js"></script>
+<script src="contactme/js/bootstrap-datepicker.min.js"></script>
+<script src="contactme/js/bootstrap-datepicker-lang/en.js"></script>
+<script src="contactme/js/jquery.timepicker.min.js"></script>
+<script src="contactme/js/select2.full.min.js"></script>
+<script src="contactme/js/select2-lang/en.js"></script>
+
+<script src="contactme/js/EQCSS-1.7.0.min.js"></script>
+<script src="contactme/js/contactme-config.js"></script>
+<script src="contactme/js/contactme-1.3.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=initRecaptchas&render=explicit" async defer></script>
+
 
 </html>

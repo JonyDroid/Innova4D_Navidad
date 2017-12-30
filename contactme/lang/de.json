@@ -1,0 +1,28 @@
+{
+	"success_text" : "Nachricht erfolgreich gesendet. Wir werden dir frühstmöglichst antworten.",
+	"something_wrong" : "Ein Fehler ist entstanden",
+	"required_field" : "Obligatorisch ausfüllen: {{1}}",
+	"number_invalid" : "{{1}} falsch ausgefüllt. Du kannst nur Nummern benutzen",
+	"email_invalid" : "{{1}} ist nicht gültig",
+	"url_invalid" : "{{1}} ist nicht gültig. Überprüfe die url",
+	"file" : {
+		"error" : "Fehler beim Laden der Datei: {{1}}",
+		"type" : "Dateiformat ist nicht gültig: {{1}}",
+		"size" : "Deine Dateien sind grösser als die Limite von {{1}}MB, wir empfehlen dir <a href=\"https://www.wetransfer.com/\" target=\"_blank\">Wetransfer</a> zu benutzen",
+		"server_limit" : "Deine geladene Datei ist grösser als die von deinem hosting provider erlaubten",
+		"generic" : "Dateifehler {{1}}: {{2}}"
+	},
+	"recaptcha" : {
+		"empty" : "Du musst den CAPTCHA ausfüllen",
+		"bot" : "Fehler Google reCAPTCHA: {{1}}",
+		"no_response" : "Keine Antwort von <a href=\"{{1}}\" target=\"_blank\">Google reCaptcha</a><br>Kontrolliere, dass dein hosting provider nicht die Funktion von cURL und file_get_contents() blockiert"
+	},
+	"emails_info" : {
+		"subject" : "Neue Nachricht in Form von Kontakt erhalten",
+		"error" : "Fehler beim Versenden: {{1}}",
+		"confirmation" : {
+			"subject" : "Wir haben deine Nachricht erhalten",
+			"body" : "Danke! Wir haben deine Nachricht erhalten. Wir melden uns frühstmöglichst."
+		}
+	}
+}
